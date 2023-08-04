@@ -4,8 +4,8 @@
 *
 *	Author: Ahmed Hisham Fathy Hassabou
 *
-*	Description: 	Main application source file. This file lights up the white led when PB1 or/and PB2 of the TivaC launchpad is pressed
-*								and turns the led off when the 2 buttons are released
+*	Description: 	Main application source file. This file uses the I2C communication method to communicate with an arduino UNO board and
+*			control its BUILTIN LED
 *
 *************************************************************************************************************************************************/
 
