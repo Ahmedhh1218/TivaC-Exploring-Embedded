@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspace>
+    <project>
+        <path>$WS_DIR$\..\..\Lab Assignments\A6\A6.ewp</path>
+    </project>
+    <project>
+        <path>$WS_DIR$\array_switch.ewp</path>
+    </project>
+    <batchBuild />
+</workspace>

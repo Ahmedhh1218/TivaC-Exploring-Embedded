@@ -1,0 +1,61 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in+++"D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $flags
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out+++"D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+
+rule MAKEBROWSE
+  command = "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out+++"D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+
+rule PDBLINK
+  command = "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out+++"D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+
+
+
+#Build steps
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\DIO.c" -xcl_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.xcl" -macro_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.tmp" -icc_path "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\DIO.c" -o "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.tmp"
+  rspfile_name = D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.xcl.rsp
+
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\keypad.c" -xcl_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.xcl" -macro_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.tmp" -icc_path "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\keypad.c" -o "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.tmp"
+  rspfile_name = D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.xcl.rsp
+
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\main.c" -xcl_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.xcl" -macro_file "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.tmp" -icc_path "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\main.c" -o "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\Obj\\" --no_cse --no_unroll --no_inline --no_code_motion --no_tbaa --no_clustering --no_scheduling --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "D$:\PROGRAMS\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -Ol --predef_macros "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.tmp"
+  rspfile_name = D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.xcl.rsp
+
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.pbi : INDEXER D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.xcl |  $
+D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\DIO.c
+  flags = "-out=D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.pbi" -f "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.xcl"
+
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.pbi : INDEXER D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.xcl |  $
+D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\keypad.c
+  flags = "-out=D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.pbi" -f "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.xcl"
+
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.pbi : INDEXER D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.xcl |  $
+D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\main.c
+  flags = "-out=D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.pbi" -f "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.xcl"
+
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\array_switch.pbw : MAKEBROWSE D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\array_switch.pbd
+  flags = "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\array_switch.pbd" -output "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\array_switch.pbw"
+
+build D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\array_switch.pbd : PDBLINK D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.pbi |  $
+D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.pbi $
+D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.pbi
+  flags = -M "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\array_switch.pbd" "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\DIO.pbi" "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\keypad.pbi" "D$:\AHMED\ASU\4.$ SENIOR$ 1\SEMESTER$ 7\CSE211$ Intro$ to$ Embedded\Lab4B_workspace\Lab4B_workspace\Debug\BrowseInfo\main.pbi"
+

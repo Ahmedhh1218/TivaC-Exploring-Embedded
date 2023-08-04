@@ -1,0 +1,31 @@
+# ninja log v5
+6	585	6894290839529617	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	4b0d09d6a22856d7
+0	597	6894290839556769	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/DIO.o	70ebfeea6423787f
+608	772	6894290841434563	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	1a100fb3aa9a476e
+8	190	6894291726304896	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+2	274	6894291727130646	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/DIO.o	ee0c47ab8d0636a
+285	351	6894291727967656	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+2	156	6894292396634411	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+170	237	6894292397474788	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+2	157	6894293185681963	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+177	243	6894293186603800	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+4	220	6894293724960947	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+234	297	6894293725783486	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+2	330	6894295352013265	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+342	414	6894295352926998	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+2	142	6894295856191531	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+151	211	6894295856923359	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+2	194	6894297019396474	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+214	305	6894297020531070	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+3	395	6894301419436892	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+407	473	6894301420260771	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+1	147	6894303216300076	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+157	219	6894303217063300	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+1	457	6894305513411224	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+472	537	6894305514332565	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+2	183	6894305750806931	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+197	262	6894305751714246	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+2	324	6894311397476930	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Obj/main.o	2330deb40f9297ed
+333	420	6894311398431680	D:/Engineering/Senior I 22-23/Fall 22/CSE211 Introduction to Embedded Systems/Labs/Lab 4/Lab4B_workspace/Debug/Exe/array_switch.out	ab59d1b6bf20e587
+79	1821	6901344232116854	D:/AHMED/ASU/4. SENIOR 1/SEMESTER 7/CSE211 Intro to Embedded/Lab4B_workspace/Lab4B_workspace/Debug/Obj/main.o	c985d3143a7ec9b8
+49	1884	6901344232636329	D:/AHMED/ASU/4. SENIOR 1/SEMESTER 7/CSE211 Intro to Embedded/Lab4B_workspace/Lab4B_workspace/Debug/Obj/DIO.o	3a1fcb0afbbbbafe
