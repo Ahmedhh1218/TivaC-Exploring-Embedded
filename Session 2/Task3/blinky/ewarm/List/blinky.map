@@ -1,0 +1,167 @@
+###############################################################################
+#
+# IAR ELF Linker V8.30.2.160/W32 for ARM                  29/Aug/2021  07:52:56
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  
+#        E:\ASU CHEP-MCT\7-Fall 2018\Microcontrollers\Lectures\Second_half\lec
+#        11 - Step 1 - systick - Blinky - Registers -
+#        Interrupt\blinky\ewarm\Exe\blinky.out
+#    Map file     =  
+#        E:\ASU CHEP-MCT\7-Fall 2018\Microcontrollers\Lectures\Second_half\lec
+#        11 - Step 1 - systick - Blinky - Registers -
+#        Interrupt\blinky\ewarm\List\blinky.map
+#    Command line =  
+#        -f C:\Users\AYMANW~1\AppData\Local\Temp\EWA96D.tmp ("E:\ASU
+#        CHEP-MCT\7-Fall 2018\Microcontrollers\Lectures\Second_half\lec 11 -
+#        Step 1 - systick - Blinky - Registers -
+#        Interrupt\blinky\ewarm\Obj\blinky.o" "E:\ASU CHEP-MCT\7-Fall
+#        2018\Microcontrollers\Lectures\Second_half\lec 11 - Step 1 - systick -
+#        Blinky - Registers - Interrupt\blinky\ewarm\Obj\startup_ewarm.o"
+#        --redirect _Printf=_PrintfTiny --redirect _Scanf=_ScanfSmallNoMb
+#        --no_out_extension -o "E:\ASU CHEP-MCT\7-Fall
+#        2018\Microcontrollers\Lectures\Second_half\lec 11 - Step 1 - systick -
+#        Blinky - Registers - Interrupt\blinky\ewarm\Exe\blinky.out" --map
+#        "E:\ASU CHEP-MCT\7-Fall 2018\Microcontrollers\Lectures\Second_half\lec
+#        11 - Step 1 - systick - Blinky - Registers -
+#        Interrupt\blinky\ewarm\List\blinky.map" --config "E:\ASU
+#        CHEP-MCT\7-Fall 2018\Microcontrollers\Lectures\Second_half\lec 11 -
+#        Step 1 - systick - Blinky - Registers - Interrupt\blinky\blinky.icf"
+#        --semihosting --entry __iar_program_start --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because some modules are built with
+size limitations (and not runtime checking), and --advanced_heap
+was not specified.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at start of [from 0x0 to 0x3'ffff] { ro section .intvec };
+"P1":  place in [from 0x0 to 0x3'ffff] { ro };
+
+No sections matched the following patterns:
+
+  rw              in "P2"
+  section VTABLE  in "A1"
+
+
+  Section  Kind     Address  Size  Object
+  -------  ----     -------  ----  ------
+"A0":                        0x40
+  .intvec  ro code      0x0  0x40  vector_table_M.o [4]
+                     - 0x40  0x40
+
+"P1":                        0xb4
+  .text    ro code     0x40  0x3c  blinky.o [1]
+  .text    ro code     0x7c  0x22  fpinit_M.o [3]
+  .text    ro code     0x9e   0x2  vector_table_M.o [4]
+  .text    ro code     0xa0  0x1e  cmain.o [4]
+  .text    ro code     0xbe   0x4  low_level_init.o [2]
+  .text    ro code     0xc2   0x4  exit.o [2]
+  .text    ro code     0xc8   0xa  cexit.o [4]
+  .text    ro code     0xd4  0x14  exit.o [5]
+  .text    ro code     0xe8   0xc  cstartup_M.o [4]
+                     - 0xf4  0xb4
+
+Unused ranges:
+
+  From        To      Size
+  ----        --      ----
+  0xf4  0x3'ffff  0x3'ff0c
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module            ro code
+    ------            -------
+command line/config:
+    -------------------------
+    Total:
+
+E:\ASU CHEP-MCT\7-Fall 2018\Microcontrollers\Lectures\Second_half\lec 11 - Step 1 - systick - Blinky - Registers - Interrupt\blinky\ewarm\Obj: [1]
+    blinky.o               60
+    -------------------------
+    Total:                 60
+
+dl7M_tln.a: [2]
+    exit.o                  4
+    low_level_init.o        4
+    -------------------------
+    Total:                  8
+
+m7M_tls.a: [3]
+    fpinit_M.o             34
+    -------------------------
+    Total:                 34
+
+rt7M_tl.a: [4]
+    cexit.o                10
+    cmain.o                30
+    cstartup_M.o           12
+    vector_table_M.o       66
+    -------------------------
+    Total:                118
+
+shb_l.a: [5]
+    exit.o                 20
+    -------------------------
+    Total:                 20
+
+    Gaps                    4
+-----------------------------
+    Grand Total:          244
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                 Address  Size  Type      Object
+-----                 -------  ----  ----      ------
+?main                    0xa1        Code  Gb  cmain.o [4]
+CSTACK$$Limit             0x0         --   Gb  - Linker created -
+Region$$Table$$Base       0x0         --   Gb  - Linker created -
+Region$$Table$$Limit      0x0         --   Gb  - Linker created -
+__cmain                  0xa1        Code  Gb  cmain.o [4]
+__exit                   0xd5  0x14  Code  Gb  exit.o [5]
+__iar_init_vfp           0x7d        Code  Gb  fpinit_M.o [3]
+__iar_program_start      0xe9        Code  Gb  cstartup_M.o [4]
+__low_level_init         0xbf   0x4  Code  Gb  low_level_init.o [2]
+__vector_table            0x0        Data  Gb  vector_table_M.o [4]
+_call_main               0xad        Code  Gb  cmain.o [4]
+_exit                    0xc9        Code  Gb  cexit.o [4]
+_main                    0xbb        Code  Gb  cmain.o [4]
+exit                     0xc3   0x4  Code  Gb  exit.o [2]
+main                     0x41  0x28  Code  Gb  blinky.o [1]
+
+
+[1] = E:\ASU CHEP-MCT\7-Fall 2018\Microcontrollers\Lectures\Second_half\lec 11 - Step 1 - systick - Blinky - Registers - Interrupt\blinky\ewarm\Obj
+[2] = dl7M_tln.a
+[3] = m7M_tls.a
+[4] = rt7M_tl.a
+[5] = shb_l.a
+
+  244 bytes of readonly  code memory
+
+Errors: none
+Warnings: none
