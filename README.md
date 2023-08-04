@@ -17,7 +17,7 @@ Welcome to the Tiva C Launchpad Microcontrollers Training repository by Ahmed Ha
 ## Getting Started
 
 1. Clone this repository to your local machine using the following command:
-https://github.com/Ahmedhh1218/TivaC-Exploring-Embedded.git
+git clone https://github.com/Ahmedhh1218/TivaC-Exploring-Embedded.git
 
 2. Navigate to the relevant project folders to access project-specific instructions and source code.
 
