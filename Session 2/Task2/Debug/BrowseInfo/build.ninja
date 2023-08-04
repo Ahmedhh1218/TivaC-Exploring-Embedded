@@ -1,0 +1,41 @@
+##IAR Ninja build file
+
+
+#Rules
+rule COMPILER_XCL
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\XclFileGenerator.exe" $xclcommand -f "$rspfile_name"
+  description = IAR_NEW_TOOL+++COMPILER_XCL+++$in
+  rspfile = $rspfile_name
+  rspfile_content = $flags
+
+rule INDEXER
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\SourceIndexer.exe" $flags
+  depfile = $out.dep
+  description = IAR_NEW_TOOL+++INDEXER+++$out
+
+rule MAKEBROWSE
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\makeBrowseData.exe" $flags
+  description = IAR_NEW_TOOL+++MAKEBROWSE+++$out
+
+rule PDBLINK
+  command = "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\common\bin\PbdLink.exe" $flags
+  description = IAR_NEW_TOOL+++PDBLINK+++$out
+
+
+
+#Build steps
+build D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.xcl : COMPILER_XCL 
+  xclcommand = -source_file "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\main.c" -xcl_file "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.xcl" -macro_file "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.tmp" -icc_path "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\bin\iccarm.exe"
+  flags = "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\main.c" -o "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\Obj\\" --debug --endian=little --cpu=Cortex-M4 -e --fpu=VFPv4_sp --dlib_config "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\inc\c\DLib_Config_Normal.h" -Oh -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\Core\Include\\" -I "C$:\Program$ Files\IAR$ Systems\Embedded$ Workbench$ 9.1\arm\CMSIS\DSP\Include\\" -D ARM_MATH_CM4 --predef_macros "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.tmp"
+  rspfile_name = D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.xcl.rsp
+
+build D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.pbi : INDEXER D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.xcl |  $
+D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\main.c
+  flags = "-out=D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.pbi" -f "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.xcl"
+
+build D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\project.pbw : MAKEBROWSE D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\project.pbd
+  flags = "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\project.pbd" -output "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\project.pbw"
+
+build D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\project.pbd : PDBLINK D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.pbi
+  flags = -M "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\project.pbd" "D$:\AHMED\ASU\5.$ SENIOR$ 2\Summer\Garraio$ Microcontrollers\References\Session$ 2\Projects\lec$ 9$ -$ Step$ 1$ -$ Timer0A$ -$ Blinky$ -$ Registers$ -Down\Debug\BrowseInfo\main.pbi"
+
