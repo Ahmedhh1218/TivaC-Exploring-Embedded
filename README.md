@@ -12,7 +12,6 @@ Welcome to the Tiva C Launchpad Microcontrollers Training repository by Ahmed Ha
 
 - **Hands-On Projects:** Put your knowledge into action with a series of hands-on projects. Build LED blinking patterns, create sensor interfaces, establish communication between devices, and even delve into motor control applications.
 
-- **Real-World Applications:** Discover practical applications of microcontrollers, from building IoT prototypes to controlling industrial machinery. Gain insights into how the Tiva C Launchpad can be used in diverse industries.
 
 ## Projects Description
 ### Session 1
